@@ -28,7 +28,10 @@
   "bugs": "https://github.com/metonym/svelte-accessible-table/issues",
   "keywords": [
     "svelte",
-    "svelte component"
+    "svelte component",
+    "table",
+    "a11y",
+    "accessible"
   ],
   "files": [
     "lib",
