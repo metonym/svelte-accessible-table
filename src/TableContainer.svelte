@@ -1,4 +1,7 @@
 <script>
+  /** @slot {{ id: string; }} caption */
+
+  /** @type {string} */
   export let caption = undefined; // string | slot:caption
   export let zebra = false;
 

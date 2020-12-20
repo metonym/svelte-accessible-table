@@ -7,12 +7,12 @@
 
   setContext("TableRow", {
     cells,
-    add: id => {
-      cells.update(_ => [..._, id]);
+    add: (id) => {
+      cells.update((_) => [..._, id]);
     },
-    remove: id => {
-      cells.set($cells.filter(cell_id => cell_id !== id));
-    }
+    remove: (id) => {
+      cells.set($cells.filter((cell_id) => cell_id !== id));
+    },
   });
 </script>
 
@@ -26,15 +26,6 @@
   }
 </style>
 
-<tr
-  {...$$restProps}
-  class:zebra={$zebra}
-  on:click
-  on:mouseover
-  on:mouseenter
-  on:mouseout
-  on:focus
-  on:blur
-  on:keydown>
+<tr {...$$restProps} class:zebra={$zebra} on:click on:mouseenter on:mouseout>
   <slot />
 </tr>

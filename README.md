@@ -3,68 +3,76 @@
 [![NPM][npm]][npm-url]
 [![Build][build]][build-badge]
 
-> Accessible table component.
+> Accessible table component for Svelte.
 
 ## Install
 
 ```bash
 yarn add -D svelte-accessible-table
+# OR
+npm i -D svelte-accessible-table
 ```
 
 ## Usage
 
-```html
+```svelte
 <script>
-  import Table from "svelte-accessible-table";
+  import {
+    TableContainer,
+    TableBody,
+    TableHead,
+    TableRow,
+    TableCell,
+  } from "svelte-accessible-table";
 </script>
 
-<Table.Container caption="Influential historical documents">
-  <Table.Head>
-    <Table.Row>
-      <Table.Cell>Document title</Table.Cell>
-      <Table.Cell>Description</Table.Cell>
-      <Table.Cell>Year</Table.Cell>
-    </Table.Row>
-  </Table.Head>
-  <Table.Body>
-    <Table.Row>
-      <Table.Cell>Declaration of Independence</Table.Cell>
-      <Table.Cell>
+<TableContainer caption="Influential historical documents">
+  <TableHead>
+    <TableRow>
+      <TableCell>Document title</TableCell>
+      <TableCell>Description</TableCell>
+      <TableCell>Year</TableCell>
+    </TableRow>
+  </TableHead>
+  <TableBody>
+    <TableRow>
+      <TableCell>Declaration of Independence</TableCell>
+      <TableCell>
         Statement adopted by the Continental Congress declaring independence
-        from the British Empire.
-      </Table.Cell>
-      <Table.Cell tabular>1776</Table.Cell>
-    </Table.Row>
-    <Table.Row>
-      <Table.Cell>Bill of Rights</Table.Cell>
-      <Table.Cell>
+        from the British Empire
+      </TableCell>
+      <TableCell tabular>1776</TableCell>
+    </TableRow>
+    <TableRow>
+      <TableCell>Bill of Rights</TableCell>
+      <TableCell>
         Document containing the first ten amendments to the United States
-        Constitution.
-      </Table.Cell>
-      <Table.Cell tabular>1791</Table.Cell>
-    </Table.Row>
-    <Table.Row>
-      <Table.Cell>Declaration of Sentiments</Table.Cell>
-      <Table.Cell>
+        Constitution
+      </TableCell>
+      <TableCell tabular>1791</TableCell>
+    </TableRow>
+    <TableRow>
+      <TableCell>Declaration of Sentiments</TableCell>
+      <TableCell>
         A document written during the Seneca Falls Convention outlining the
-        rights that American women should be entitled to as citizens.
-      </Table.Cell>
-      <Table.Cell tabular>1848</Table.Cell>
-    </Table.Row>
-  </Table.Body>
-</Table.Container>
+        rights that American women should be entitled to as citizens
+      </TableCell>
+      <TableCell tabular>1848</TableCell>
+    </TableRow>
+  </TableBody>
+</TableContainer>
 ```
 
 ## API
 
-### `Table.Container`
+### `TableContainer`
 
 | Property name | Value                                          |
 | :------------ | :--------------------------------------------- |
 | caption       | `string` or `slot:name` (default: `undefined`) |
 | zebra         | `boolean` (default: `false`)                   |
 
-### `Table.Cell`
+### `TableCell`
 
 | Property name | Value                        |
 | :------------ | :--------------------------- |
@@ -72,15 +80,15 @@ yarn add -D svelte-accessible-table
 
 ## Forwarded events
 
-The following events are forwarded to the `Table.Head`, `Table.Row` and `Table.Cell` components.
+The following events are forwarded to the `TableHead`, `TableRow` and `TableCell` components.
 
 - on:click
-- on:mouseover
 - on:mouseenter
 - on:mouseout
-- on:focus
-- on:blur
-- on:keydown
+
+## TypeScript support
+
+Svelte version 3.31 or greater is required to use this module with TypeScript.
 
 ## [Changelog](CHANGELOG.md)
 

@@ -1,16 +1,5 @@
-import TableContainer from "./TableContainer.svelte";
-import TableHead from "./TableHead.svelte";
-import TableBody from "./TableBody.svelte";
-import TableRow from "./TableRow.svelte";
-import TableCell from "./TableCell.svelte";
-
-const Table = {
-  Container: TableContainer,
-  Head: TableHead,
-  Body: TableBody,
-  Row: TableRow,
-  Cell: TableCell,
-};
-
-export default Table;
-export { TableContainer, TableHead, TableBody, TableRow, TableCell };
+export { default as TableContainer } from "./TableContainer.svelte";
+export { default as TableHead } from "./TableHead.svelte";
+export { default as TableBody } from "./TableBody.svelte";
+export { default as TableRow } from "./TableRow.svelte";
+export { default as TableCell } from "./TableCell.svelte";

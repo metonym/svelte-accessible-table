@@ -22,7 +22,7 @@
 
   $: if (ctx_table_row !== undefined) {
     ctx_table_row.add(id);
-    unsubscribe = ctx_table_row.cells.subscribe(value => {
+    unsubscribe = ctx_table_row.cells.subscribe((value) => {
       first_Td = value.indexOf(id) === 0;
     });
   }
@@ -47,12 +47,8 @@
     scope="col"
     class:tabular
     on:click
-    on:mouseover
     on:mouseenter
-    on:mouseout
-    on:focus
-    on:blur
-    on:keydown>
+    on:mouseout>
     <slot />
   </th>
 {:else}
@@ -62,25 +58,12 @@
       scope="row"
       class:tabular
       on:click
-      on:mouseover
       on:mouseenter
-      on:mouseout
-      on:focus
-      on:blur
-      on:keydown>
+      on:mouseout>
       <slot />
     </th>
   {:else}
-    <td
-      {...$$restProps}
-      class:tabular
-      on:click
-      on:mouseover
-      on:mouseenter
-      on:mouseout
-      on:focus
-      on:blur
-      on:keydown>
+    <td {...$$restProps} class:tabular on:click on:mouseenter on:mouseout>
       <slot />
     </td>
   {/if}
