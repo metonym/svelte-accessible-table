@@ -1,12 +1,13 @@
 {
   "name": "svelte-accessible-table",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "license": "MIT",
-  "description": "Accessible table component",
+  "description": "Accessible table component for Svelte",
   "author": "Eric Liu (https://github.com/metonym)",
   "svelte": "./src/index.js",
   "main": "./lib/index.js",
   "module": "./lib/index.mjs",
+  "types": "./types/index.d.ts",
   "sideEffects": false,
   "scripts": {
     "dev": "rollup -cw",
@@ -41,6 +42,7 @@
   ],
   "files": [
     "lib",
-    "src"
+    "src",
+    "types"
   ]
 }
