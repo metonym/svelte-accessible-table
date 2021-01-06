@@ -1,9 +1,14 @@
 # svelte-accessible-table
 
 [![NPM][npm]][npm-url]
-[![Build][build]][build-badge]
 
 > Accessible table component for Svelte.
+
+<!-- REPO_URL -->
+
+---
+
+<!-- TOC -->
 
 ## Install
 
@@ -15,6 +20,7 @@ npm i -D svelte-accessible-table
 
 ## Usage
 
+<!-- prettier-ignore-start -->
 ```svelte
 <script>
   import {
@@ -62,23 +68,24 @@ npm i -D svelte-accessible-table
   </TableBody>
 </TableContainer>
 ```
+<!-- prettier-ignore-end -->
 
 ## API
 
-### `TableContainer`
+### TableContainer
 
 | Property name | Value                                          |
 | :------------ | :--------------------------------------------- |
 | caption       | `string` or `slot:name` (default: `undefined`) |
 | zebra         | `boolean` (default: `false`)                   |
 
-### `TableCell`
+### TableCell
 
 | Property name | Value                        |
 | :------------ | :--------------------------- |
 | tabular       | `boolean` (default: `false`) |
 
-## Forwarded events
+### Forwarded events
 
 The following events are forwarded to the `TableHead`, `TableRow` and `TableCell` components.
 
@@ -86,17 +93,17 @@ The following events are forwarded to the `TableHead`, `TableRow` and `TableCell
 - on:mouseenter
 - on:mouseout
 
-## TypeScript support
+## TypeScript
 
-Svelte version 3.31 or greater is required to use this module with TypeScript.
+Svelte version 3.31 or greater is required to use this component with TypeScript.
 
-## [Changelog](CHANGELOG.md)
+## Changelog
+
+[Changelog](CHANGELOG.md)
 
 ## License
 
 [MIT](LICENSE)
 
-[npm]: https://img.shields.io/npm/v/svelte-accessible-table.svg?color=blue
+[npm]: https://img.shields.io/npm/v/svelte-accessible-table.svg?style=for-the-badge&color=%23ff3e00
 [npm-url]: https://npmjs.com/package/svelte-accessible-table
-[build]: https://travis-ci.com/metonym/svelte-accessible-table.svg?branch=master
-[build-badge]: https://travis-ci.com/metonym/svelte-accessible-table
