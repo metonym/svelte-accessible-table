@@ -5,9 +5,10 @@
     TableHead,
     TableRow,
     TableCell,
-  } from "./types";
+  } from "../types";
 </script>
 
+<!-- svelte-ignore missing-declaration -->
 <TableContainer zebra caption="Influential historical documents">
   <TableHead>
     <TableRow>
