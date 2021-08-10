@@ -9,7 +9,7 @@ export default class TableHead extends SvelteComponentTyped<
   {
     click: WindowEventMap["click"];
     mouseenter: WindowEventMap["mouseenter"];
-    mouseout: WindowEventMap["mouseout"];
+    mouseout: WindowEventMap["mouseleave"];
   },
   { default: {} }
 > {}

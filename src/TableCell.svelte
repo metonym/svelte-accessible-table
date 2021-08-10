@@ -48,7 +48,7 @@
     class:tabular
     on:click
     on:mouseenter
-    on:mouseout>
+    on:mouseleave>
     <slot />
   </th>
 {:else}
@@ -59,11 +59,11 @@
       class:tabular
       on:click
       on:mouseenter
-      on:mouseout>
+      on:mouseleave>
       <slot />
     </th>
   {:else}
-    <td {...$$restProps} class:tabular on:click on:mouseenter on:mouseout>
+    <td {...$$restProps} class:tabular on:click on:mouseenter on:mouseleave>
       <slot />
     </td>
   {/if}

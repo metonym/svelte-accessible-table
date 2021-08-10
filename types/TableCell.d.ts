@@ -14,7 +14,7 @@ export default class TableCell extends SvelteComponentTyped<
   {
     click: WindowEventMap["click"];
     mouseenter: WindowEventMap["mouseenter"];
-    mouseout: WindowEventMap["mouseout"];
+    mouseout: WindowEventMap["mouseleave"];
   },
   { default: {} }
 > {}

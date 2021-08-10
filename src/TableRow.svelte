@@ -26,6 +26,6 @@
   }
 </style>
 
-<tr {...$$restProps} class:zebra={$zebra} on:click on:mouseenter on:mouseout>
+<tr {...$$restProps} class:zebra={$zebra} on:click on:mouseenter on:mouseleave>
   <slot />
 </tr>
