@@ -2,7 +2,7 @@
 
 [![NPM][npm]][npm-url]
 
-> Accessible table component for Svelte.
+> Accessible Svelte table component.
 
 <!-- REPO_URL -->
 
@@ -10,17 +10,22 @@
 
 <!-- TOC -->
 
-## Install
+## Installation
+
+**Yarn**
 
 ```bash
 yarn add -D svelte-accessible-table
-# OR
+```
+
+**NPM**
+
+```bash
 npm i -D svelte-accessible-table
 ```
 
 ## Usage
 
-<!-- prettier-ignore-start -->
 ```svelte
 <script>
   import {
@@ -68,22 +73,21 @@ npm i -D svelte-accessible-table
   </TableBody>
 </TableContainer>
 ```
-<!-- prettier-ignore-end -->
 
 ## API
 
 ### TableContainer
 
-| Property name | Value                                          |
-| :------------ | :--------------------------------------------- |
-| caption       | `string` or `slot:name` (default: `undefined`) |
-| zebra         | `boolean` (default: `false`)                   |
+| Prop name | Value                                          |
+| :-------- | :--------------------------------------------- |
+| caption   | `string` or `slot:name` (default: `undefined`) |
+| zebra     | `boolean` (default: `false`)                   |
 
 ### TableCell
 
-| Property name | Value                        |
-| :------------ | :--------------------------- |
-| tabular       | `boolean` (default: `false`) |
+| Prop name | Value                        |
+| :-------- | :--------------------------- |
+| tabular   | `boolean` (default: `false`) |
 
 ### Forwarded events
 
@@ -91,11 +95,13 @@ The following events are forwarded to the `TableHead`, `TableRow` and `TableCell
 
 - on:click
 - on:mouseenter
-- on:mouseout
+- on:mouseleave
 
 ## TypeScript
 
 Svelte version 3.31 or greater is required to use this component with TypeScript.
+
+TypeScript definitions are located in the [types folder](./types).
 
 ## Changelog
 
