@@ -24,6 +24,12 @@ yarn add -D svelte-accessible-table
 npm i -D svelte-accessible-table
 ```
 
+**pnpm**
+
+```bash
+pnpm i -D svelte-accessible-table
+```
+
 ## Usage
 
 ```svelte
@@ -76,18 +82,18 @@ npm i -D svelte-accessible-table
 
 ## API
 
-### TableContainer
+### `TableContainer` props
 
-| Prop name | Value                                          |
-| :-------- | :--------------------------------------------- |
-| caption   | `string` or `slot:name` (default: `undefined`) |
-| zebra     | `boolean` (default: `false`)                   |
+| Name    | Type                    | Default value |
+| :------ | :---------------------- | :------------ |
+| caption | `string` or `slot:name` | `undefined`   |
+| zebra   | `boolean`               | `false`       |
 
-### TableCell
+### `TableCell` props
 
-| Prop name | Value                        |
-| :-------- | :--------------------------- |
-| tabular   | `boolean` (default: `false`) |
+| Name    | Type      | Default value |
+| :------ | :-------- | :------------ |
+| tabular | `boolean` | `false`       |
 
 ### Forwarded events
 
@@ -96,12 +102,6 @@ The following events are forwarded to the `TableHead`, `TableRow` and `TableCell
 - on:click
 - on:mouseenter
 - on:mouseleave
-
-## TypeScript
-
-Svelte version 3.31 or greater is required to use this component with TypeScript.
-
-TypeScript definitions are located in the [types folder](./types).
 
 ## Changelog
 
