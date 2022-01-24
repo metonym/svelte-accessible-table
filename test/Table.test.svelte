@@ -5,8 +5,8 @@
     TableHead,
     TableRow,
     TableCell,
-  } from "../types";
-  import Table from "../types/TableBody.svelte";
+  } from "../src";
+  import Table from "../src/TableBody.svelte";
 </script>
 
 <!-- svelte-ignore missing-declaration -->

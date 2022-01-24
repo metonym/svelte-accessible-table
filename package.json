@@ -7,14 +7,14 @@
   "svelte": "./src/index.js",
   "main": "./lib/index.js",
   "module": "./lib/index.mjs",
-  "types": "./types/index.d.ts",
+  "types": "./src/index.d.ts",
   "sideEffects": false,
   "scripts": {
     "dev": "rollup -cw",
     "predeploy": "rollup -c",
     "deploy": "gh-pages -d dist",
     "prepack": "BUNDLE=true rollup -c",
-    "test": "svelte-check --workspace=test/*"
+    "test": "svelte-check --workspace test"
   },
   "devDependencies": {
     "gh-pages": "^3.2.3",
@@ -37,7 +37,6 @@
   ],
   "files": [
     "lib",
-    "src",
-    "types"
+    "src"
   ]
 }
