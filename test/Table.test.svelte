@@ -6,6 +6,7 @@
     TableRow,
     TableCell,
   } from "../types";
+  import Table from "../types/TableBody.svelte";
 </script>
 
 <!-- svelte-ignore missing-declaration -->
@@ -44,3 +45,6 @@
     </TableRow>
   </TableBody>
 </TableContainer>
+
+<!-- svelte-ignore missing-declaration -->
+<Table />
